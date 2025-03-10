@@ -24,7 +24,7 @@ Welcome to my SQL Portfolio! This repository contains SQL queries and data analy
 - Analyzed trends in layoffs over time and their correlation with global events.  
 - Used `CASE WHEN` and `COUNT()` to categorize layoffs by severity.  
 
-📂 **Files:** [View SQL Queries](link-to-your-sql-file)
+📂 **Files:** [View SQL Queries](https://github.com/rsm723/sql-projects/blob/main/mysqllayoffs.sql)
 
 ---
 

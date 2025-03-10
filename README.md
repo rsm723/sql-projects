@@ -6,11 +6,12 @@ Welcome to my SQL Portfolio! This repository contains SQL queries and data analy
 
 ### 1️⃣ Manhattan Rent Prices 🏙️  
 **Objective:** Analyzing rental trends across different neighborhoods in Manhattan.  
-**Skills Used:** Data cleaning, aggregation, grouping, and filtering.  
+**Skills Used:** Data cleaning, aggregation, counting distinct values, and groupings.  
 **Key Insights:**  
-- Identified neighborhoods with the highest and lowest rental prices.  
-- Analyzed price trends over time to determine seasonality.  
-- Used `AVG()`, `RANK()`, and `JOINs` to compare different apartment sizes.  
+- Counted total rental units available.  
+- Identified how many neighborhoods have rental listings.  
+- Analyzed the number of units available in each neighborhood.  
+- Classified different property types based on the number of bedrooms.   
 
 📂 **Files:** [View SQL Queries](https://github.com/rsm723/sql-projects/blob/main/manhattan_rent.sql)
 
@@ -18,11 +19,11 @@ Welcome to my SQL Portfolio! This repository contains SQL queries and data analy
 
 ### 2️⃣ World Layoffs 🌎📉  
 **Objective:** Examining layoffs data across different industries and countries.  
-**Skills Used:** Data cleaning, aggregation, window functions, grouping, and filtering.  
+**Skills Used:** CTEs, subqueries, window functions, and date manipulation.  
 **Key Insights:**  
-- Identified industries most affected by layoffs.  
-- Analyzed trends in layoffs over time and their correlation with global events.  
-- Used `CASE WHEN` and `COUNT()` to categorize layoffs by severity.  
+- Analyzed layoffs by month and calculated cumulative rolling totals.  
+- Identified layoff trends over time using window functions.  
+- Summarized layoffs by company and year.  
 
 📂 **Files:** [View SQL Queries](https://github.com/rsm723/sql-projects/blob/main/mysqllayoffs.sql)
 
@@ -30,11 +31,11 @@ Welcome to my SQL Portfolio! This repository contains SQL queries and data analy
 
 ### 3️⃣ Pizza Sales Analysis 🍕💰  
 **Objective:** Understanding sales patterns and customer preferences at a pizza shop.  
-**Skills Used:** Data cleaning, aggregation, window functions, grouping, and time-based analysis.  
+**Skills Used:** String manipulation, date formatting, updates, and data transformation.  
 **Key Insights:**  
-- Identified the best-selling and least popular pizza types.  
-- Analyzed peak sales hours to optimize staffing.  
-- Used `SUM()`, `GROUP BY`, and `HAVING` to break down revenue and sales by category.  
+- Cleaned and standardized the date format in the dataset.  
+- Extracted and formatted order dates for better analysis.  
+- Prepared data for further analysis by ensuring consistency in date records.  
 
 📂 **Files:** [View SQL Queries](https://github.com/rsm723/sql-projects/blob/main/pizza_sales_sql.sql)  
 
@@ -60,9 +61,5 @@ I have also built Tableau dashboards for some of these projects to provide visua
 
 ### 🛠️ Tools Used  
 - **SQL (PostgreSQL/MySQL/BigQuery, etc.)**  
-- **Tableau for Visualization**  
-- **Excel for Data Preprocessing (if applicable)**  
+- **Tableau for Visualization**   
 
----
-
-Let me know if you'd like to tweak anything! Also, don't forget to replace the placeholder links (`link-to-your-sql-file` and `your-tableau-link`) with actual URLs to your SQL files and dashboards. 🚀

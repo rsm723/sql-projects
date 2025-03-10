@@ -36,14 +36,14 @@ Welcome to my SQL Portfolio! This repository contains SQL queries and data analy
 - Analyzed peak sales hours to optimize staffing.  
 - Used `SUM()`, `GROUP BY`, and `HAVING` to break down revenue and sales by category.  
 
-📂 **Files:** [View SQL Queries](link-to-your-sql-file)  
+📂 **Files:** [View SQL Queries](https://github.com/rsm723/sql-projects/blob/main/pizza_sales_sql.sql)  
 
 ---
 
 ## 📊 Tableau Dashboards  
 I have also built Tableau dashboards for some of these projects to provide visual insights. Check them out here:  
 
-- **Manhattan Rent Prices Dashboard**:[View on Tableau Public] (https://public.tableau.com/app/profile/ryan.murphy1840/viz/Manhattanrentnew/ManhattanRentOptions)
+- **Manhattan Rent Prices Dashboard**: [View on Tableau Public](https://public.tableau.com/app/profile/ryan.murphy1840/viz/Manhattanrentnew/ManhattanRentOptions)
   
 - **World Layoffs Dashboard**: [View on Tableau Public](https://public.tableau.com/app/profile/ryan.murphy1840/viz/WorldLayoffs_17390344487470/LayoffsDuringCovidStory)
   

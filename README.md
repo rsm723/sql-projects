@@ -6,7 +6,7 @@ Welcome to my SQL Portfolio! This repository contains SQL queries and data analy
 
 ### 1️⃣ Manhattan Rent Prices 🏙️  
 **Objective:** Analyzing rental trends across different neighborhoods in Manhattan.  
-**Skills Used:** Data cleaning, aggregation, window functions, and filtering.  
+**Skills Used:** Data cleaning, aggregation, grouping, and filtering.  
 **Key Insights:**  
 - Identified neighborhoods with the highest and lowest rental prices.  
 - Analyzed price trends over time to determine seasonality.  
@@ -18,7 +18,7 @@ Welcome to my SQL Portfolio! This repository contains SQL queries and data analy
 
 ### 2️⃣ World Layoffs 🌎📉  
 **Objective:** Examining layoffs data across different industries and countries.  
-**Skills Used:** CTEs, subqueries, groupings, and ranking functions.  
+**Skills Used:** Data cleaning, aggregation, window functions, grouping, and filtering.  
 **Key Insights:**  
 - Identified industries most affected by layoffs.  
 - Analyzed trends in layoffs over time and their correlation with global events.  
@@ -30,7 +30,7 @@ Welcome to my SQL Portfolio! This repository contains SQL queries and data analy
 
 ### 3️⃣ Pizza Sales Analysis 🍕💰  
 **Objective:** Understanding sales patterns and customer preferences at a pizza shop.  
-**Skills Used:** Joins, aggregations, time-based analysis.  
+**Skills Used:** Data cleaning, aggregation, window functions, grouping, and time-based analysis.  
 **Key Insights:**  
 - Identified the best-selling and least popular pizza types.  
 - Analyzed peak sales hours to optimize staffing.  

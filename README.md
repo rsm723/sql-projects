@@ -43,9 +43,12 @@ Welcome to my SQL Portfolio! This repository contains SQL queries and data analy
 ## 📊 Tableau Dashboards  
 I have also built Tableau dashboards for some of these projects to provide visual insights. Check them out here:  
 
-- **Manhattan Rent Prices Dashboard**: [View on Tableau Public](your-tableau-link)  
-- **World Layoffs Dashboard**: [View on Tableau Public](your-tableau-link)  
-- **Pizza Sales Dashboard**: [View on Tableau Public](your-tableau-link)  
+- **Manhattan Rent Prices Dashboard**:
+- [https://public.tableau.com/app/profile/ryan.murphy1840/viz/Manhattanrentnew/ManhattanRentOptions)
+  
+- **World Layoffs Dashboard**: [View on Tableau Public](https://public.tableau.com/app/profile/ryan.murphy1840/viz/WorldLayoffs_17390344487470/LayoffsDuringCovidStory)
+  
+- **Pizza Sales Dashboard**: [View on Tableau Public](https://public.tableau.com/app/profile/ryan.murphy1840/viz/PizzaSales_17394036910730/Dashboard1)  
 
 ---
 

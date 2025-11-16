@@ -1,4 +1,4 @@
-SELECT * FROM world_layoffs.manhattan_rent;
+SELECT * FROM sql_projects.manhattan_rent;
 
 -- how many units are there --
 

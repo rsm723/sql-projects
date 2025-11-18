@@ -25,7 +25,7 @@ Welcome to my SQL Portfolio! This repository contains SQL queries and data analy
 - Identified layoff trends over time using window functions.  
 - Summarized layoffs by company and year.  
 
-📂 **Files:** [View SQL Queries](https://github.com/rsm723/sql-projects/blob/main/mysqllayoffs.sql)
+📂 **Files:** [View SQL Queries](https://github.com/rsm723/sql-projects/blob/main/layoffs_project.sql)
 
 ---
 

@@ -1,4 +1,6 @@
-SELECT * FROM bakery.pizza_sales;
+RENAME TABLE bakery.pizza_sales to sql_projects.pizza_sales;
+
+SELECT * FROM sql_projects.pizza_sales;
 
 UPDATE pizza_sales
 SET order_date = TRIM(order_date);
@@ -307,3 +309,6 @@ FROM (
     HAVING COUNT(pizza_id) > 1
 ) AS multi_pizza_orders
 ;
+
+
+

@@ -5,7 +5,7 @@ SELECT * FROM sql_projects.manhattan_rent;
 SELECT COUNT('rental_id')  AS total_units
 From manhattan_rent;
 
--- How many different Towns have had sales --
+-- Number of Neighborhoods included --
 
 SELECT COUNT(DISTINCT neighborhood) AS number_of_neighborhoods
  from manhattan_rent
@@ -16,6 +16,7 @@ SELECT COUNT(DISTINCT neighborhood) AS number_of_neighborhoods
  Select neighborhood, COUNT(rental_id) AS number_of_units
  From manhattan_rent
  Group by neighborhood
+ order by COUNT(rental_id) DESC
  ;
 
 -- Different Property Types -- 
@@ -46,6 +47,9 @@ group by neighborhood
 order by AVG(rent) 
 ;
 
+-- I know it is at the very tipy top of Manhattan but 1395 is not a bad deal comparatively to anywhere else in Manhattan -- 
+-- Soho is the most expensive neighborhood, not surprising -- 
+
 -- Rent by minutes from subway --
 
 SELECT min_to_subway, ROUND(AVG(rent),0) AS Average_rent
@@ -53,6 +57,23 @@ From manhattan_rent
 group by min_to_subway
 order by min_to_subway 
 ;
+
+-- In general the closer to the subway the more expensive it is -- Where is 16 minutes from subway and average rent over $7200? thats an outliar --
+-- Also where is 43 minutes from a subway?--
+
+Select rental_id, neighborhood
+From manhattan_rent
+WHERE min_to_subway = 16
+;
+
+-- We don't have addresses but my guess is these are the nice units that are right on the east river. Subways are several Avenues over -- 
+
+Select *
+From manhattan_rent
+WHERE min_to_subway = 43
+;
+
+-- This has to be an error, There is nowhere in these neighborhoods that is that far from a subway. Is 43 the max number it defaults to? -- 
 
 -- Rent by distance from subway grouped --
 
@@ -68,6 +89,9 @@ From manhattan_rent
 GROUP BY minutes_from_subway
 Order by minutes_from_subway
 ;
+
+-- This further supports my theory that the units far from a subway must be on the water or have some other factor that is making the rent much higher--
+-- It could also be bigger units with more bedrooms -- 
 
 SELECT 
     neighborhood,
@@ -152,6 +176,8 @@ GROUP BY neighborhood,
 ORDER BY neighborhood, square_feet
 ;
 
+-- This shows you how the same amount of space can very so drastically by neighborhood -- 
+
 -- Rent by Apartment Size, Neighborhood, and Number of Bedrooms -- 
 
 SELECT 
@@ -184,6 +210,9 @@ END AS Washer_and_dryer
 From manhattan_rent
 Group by washer_and_dryer
 ;
+
+-- on average units with a washer and dryer will cost an extra $500 --
+
 
 -- Rent with/without Washer and Dryer by Neighborhood -- 
 
@@ -218,6 +247,8 @@ END AS Doorman
 From manhattan_rent
 Group by Doorman
 ;
+
+-- On Average units with a doorman cost an extra $200--
 
 
 -- Rent with/without Doorman by neighborhood--
@@ -265,6 +296,8 @@ GROUP BY neighborhood
 Order by neighborhood
 ;
 
+-- buildings with elevators cost roughly $350 on average --
+
 -- Rent by Neighborhood and Bedrooms with/without an Elevator --
 
 SELECT
@@ -286,6 +319,8 @@ END AS Patio
 From manhattan_rent
 Group by Patio
 ;
+
+-- Units with a patio cost an extra $400 on average --
 
 -- Rent with/without a Patio by Neighborhood -- 
 
@@ -321,6 +356,8 @@ From manhattan_rent
 Group by Gym
 ;
 
+-- Units with gym access cost an everage of over $300 a month more --
+
 
 -- Rent with/without a Gym by Neighborhood--
 
@@ -355,6 +392,7 @@ From manhattan_rent
 Group by rooftop
 ;
 
+-- Buildings with a roofdeck cost roughly $300 more per unit -- 
 
 -- Rent with/without a Roofdeck by Neighborhood-- 
 
@@ -388,6 +426,10 @@ END AS Dishwasher
 From manhattan_rent
 Group by Dishwasher
 ;
+
+-- Units with a dishwasher cost an Average of $400 more than units without one which I found surprising--
+-- I figured some of the other feautures would drive the price up more than a dishwasher -- 
+
 
 -- Rent for dishwasher/no dishwasher by neighborhood -- 
 SELECT

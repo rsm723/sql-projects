@@ -1,4 +1,4 @@
-RENAME TABLE bakery.pizza_sales to sql_projects.pizza_sales;
+
 
 SELECT * FROM sql_projects.pizza_sales;
 

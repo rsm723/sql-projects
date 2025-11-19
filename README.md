@@ -40,6 +40,23 @@ Welcome to my SQL Portfolio! This repository contains SQL queries and data analy
 📂 **Files:** [View SQL Queries](https://github.com/rsm723/sql-projects/blob/main/pizza_sales_sql.sql)  
 
 ---
+## 🗂 Raw Data
+
+The raw Excel/CSV data files used for these SQL projects are included here.  
+You can download them and import into MySQL Workbench to run the queries.
+
+| Project | File |
+|---------|------|
+| Manhattan Rent Prices | [Download Excel](raw_data/manhattan.csv)    |
+| World Layoffs         | [Download Excel](raw_data/layoffs_data.csv) |
+| Pizza Sales Analysis  | [Download Excel](raw_data/pizza_sales.csv)  |
+
+**How to use:**
+1. Download the Excel/CSV file from the link above.  
+2. In MySQL Workbench, use the *Table Data Import Wizard* to import the file into a table.  
+3. Run the SQL queries in `sql_projects/` to reproduce the analyses.
+
+
 
 ## 📊 Tableau Dashboards  
 I have also built Tableau dashboards for some of these projects to provide visual insights. Check them out here:  
